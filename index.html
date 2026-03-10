@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="theme-controls">
+    <button id="theme-toggle">🌙 Night Mode</button>
+</div>
+
 <div class="resume-container">
     <aside class="sidebar">
         <div class="profile-section">
@@ -94,7 +98,32 @@
                 successfully and on time.
             </p>
         </section>
+
+        <section>
+            <h2>Employer Comments</h2>
+            <div id="comments-container">
+                <p>Loading comments...</p>
+            </div>
+        </section>
     </main>
 </div>
+
+<footer id="storage-footer"></footer>
+
+<div id="modal-form" class="modal-overlay" style="display: none;">
+    <div class="modal-content">
+        <span id="close-btn">&times;</span>
+        <h3>Feedback Form</h3>
+        <form action="https://formspree.io/f/xvzwkved" method="POST">
+            <input type="text" name="name" placeholder="Ім’я" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="phone" placeholder="Номер телефону" required>
+            <textarea name="message" placeholder="Ваш текст" required></textarea>
+            <button type="submit" class="submit-btn">Відправити</button>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
