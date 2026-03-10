@@ -1,0 +1,131 @@
+:root {
+    --side-bg: #fff5f8;
+    --accent-main: #d4a5b2;
+    --accent-purple: #b39ddb;
+    --text-dark: #4a4a4a;
+    --white: #ffffff;
+    --border-color: #fce4ec;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #fdfbfb;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    margin: 0;
+    color: var(--text-dark);
+}
+
+.resume-container {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    width: 850px;
+    background: var(--white);
+    box-shadow: 0 10px 30px rgba(212, 165, 178, 0.15);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.sidebar {
+    background-color: var(--side-bg);
+    padding: 40px 25px;
+    border-right: 1px solid var(--border-color);
+}
+
+.profile-photo {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    border: 3px solid var(--white);
+    object-fit: cover;
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    margin: 0;
+    color: var(--accent-main);
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: var(--accent-purple);
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.sidebar h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--accent-main);
+    border-bottom: 1px solid var(--accent-main);
+    padding-bottom: 5px;
+    margin-top: 35px;
+}
+
+.sidebar address p, .sidebar p {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.sidebar a {
+    color: var(--accent-main);
+    text-decoration: none;
+}
+
+.main-content {
+    padding: 50px;
+}
+
+.main-content h2 {
+    color: var(--accent-main);
+    border-left: 4px solid var(--accent-purple);
+    padding-left: 15px;
+    margin-bottom: 25px;
+    font-size: 19px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.skills-grid li {
+    background: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 13px;
+    border: 1px solid var(--border-color);
+    color: var(--text-dark);
+}
+
+article {
+    margin-bottom: 30px;
+}
+
+article h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.date {
+    font-weight: bold;
+    color: var(--accent-purple);
+    margin: 4px 0;
+    font-size: 13px;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 14px;
+}
