@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Sofia Vynar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="theme-controls">
+    <button id="theme-toggle">🌙 Night Mode</button>
+</div>
+
+<div class="resume-container">
+    <aside class="sidebar">
+        <div class="profile-section">
+            <img src="photo.jpg" alt="Sofia Vynar" class="profile-photo">
+            <h1>Sofia Vynar</h1>
+            <p class="subtitle">Student | Cybersecurity & Web Development</p>
+        </div>
+
+        <section class="sidebar-info">
+            <h2>Contact Information</h2>
+            <address>
+                <p><strong>Address:</strong> Lviv, Ukraine</p>
+                <p><strong>Phone:</strong> <a href="tel:+380983943120">+380 98 394 3120</a></p>
+                <p><strong>Email:</strong> <a href="mailto:vynarsofia@gmail.com">vynarsofia@gmail.com</a></p>
+            </address>
+        </section>
+
+        <section class="sidebar-info">
+            <h2>References</h2>
+            <p>Available upon request.</p>
+        </section>
+    </aside>
+
+    <main class="main-content">
+        <section>
+            <h2>Objective</h2>
+            <p>
+                My goal is to develop professional skills in the field of cybersecurity
+                and web development. I am motivated to learn modern technologies,
+                improve analytical thinking, and gain practical experience in IT.
+            </p>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <ul class="skills-grid">
+                <li>HTML</li>
+                <li>Python</li>
+                <li>C++</li>
+                <li>C#</li>
+                <li>JavaScript</li>
+                <li>Cybersecurity fundamentals</li>
+                <li>Database basics</li>
+                <li>Git</li>
+                <li>Problem solving</li>
+                <li>Time management</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <article>
+                <h3>Technical Professional College of Lviv Polytechnic National University</h3>
+                <p class="date">2022 – 2026</p>
+                <p>Specialty: Computer Science | Degree: Junior Bachelor</p>
+            </article>
+
+            <article>
+                <h3>Lviv Polytechnic National University</h3>
+                <p class="date">2026 – Present</p>
+                <p>Specialty: Cybersecurity | Degree: Bachelor</p>
+            </article>
+
+            <article>
+                <h3>Courses</h3>
+                <p>Python Programming Course — 2023</p>
+                <p>Web Designer Course — 2025</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Communication</h2>
+            <p>
+                I enjoy collaborating with other students during academic work.
+                I am open to new ideas and teamwork that helps achieve better
+                results in studying and projects.
+            </p>
+        </section>
+
+        <section>
+            <h2>Leadership</h2>
+            <p>
+                During group assignments I help organize teamwork, distribute
+                tasks between students, and support others to complete work
+                successfully and on time.
+            </p>
+        </section>
+
+        <section>
+            <h2>Employer Comments</h2>
+            <div id="comments-container">
+                <p>Loading comments...</p>
+            </div>
+        </section>
+    </main>
+</div>
+
+<footer id="storage-footer"></footer>
+
+<div id="modal-form" class="modal-overlay" style="display: none;">
+    <div class="modal-content">
+        <span id="close-btn">&times;</span>
+        <h3>Feedback Form</h3>
+        <form id="contact-form">
+            <input type="text" id="form-name" name="name" placeholder="Ім’я" required>
+            <input type="email" id="form-email" name="email" placeholder="Email" required>
+            <input type="text" id="form-subject" name="subject" placeholder="Тема повідомлення" required>
+            <textarea id="form-message" name="message" placeholder="Ваш текст" required></textarea>
+            <button type="submit" class="submit-btn">Відправити</button>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
